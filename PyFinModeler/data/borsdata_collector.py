@@ -26,7 +26,7 @@ class BorsdataCollector:
         self.session.headers.update({
             "Authorization": f"Basic {auth_base64}"
         })
-        self.kpi_collector = BorsdataKPIColgitlector(api_key=self.api_key)
+        self.kpi_collector = BorsdataKPICollector(api_key=self.api_key)
 
     def fetch_company_by_name(
         self,
