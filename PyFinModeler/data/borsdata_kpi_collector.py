@@ -9,15 +9,15 @@ class BorsdataKPICollector:
 
     def __init__(self, api_key: str):
         """
-        Initializes the KPI collector to fetch global KPIs from Börsdata.
+        Initialize the KPI Collector for Swedish/Nordic companies.
 
         Args:
-            api_key: Your personal Börsdata API key
+            api_key: Your Börsdata API Key
         """
         self.api_key = api_key
         self.session = requests.Session()
 
-        # Börsdata authentication: Basic Auth (username=api_key, password=empty)
+        # Börsdata authentication: Basic Auth (username = api_key, password = empty)
         auth_string = f"{self.api_key}:"
         auth_base64 = base64.b64encode(auth_string.encode('utf-8')).decode('utf-8')
         self.session.headers.update({
@@ -26,31 +26,34 @@ class BorsdataKPICollector:
 
     def fetch_kpis(
         self,
+        instrument_id: int,
         kpi_id: int,
-        period_type: str = "1year",   # ✅ Correct parameter: 1year, 3year, 5year
-        calculation: str = "mean"      # mean, low, high
+        report_type: str = "year",  # 'year', 'r12', 'quarter'
+        price_type: str = "mean"    # 'mean', 'low', 'high'
     ) -> Dict[int, float]:
         """
-        Fetch KPI values for all global instruments.
+        Fetch historical KPI values for a specific instrument.
 
         Args:
-            kpi_id: KPI ID according to Börsdata documentation
-            period_type: '1year', '3year', or '5year'
-            calculation: 'mean', 'low', or 'high'
+            instrument_id: Company Instrument ID (e.g., 1605 for Atlas Copco B)
+            kpi_id: KPI ID
+            report_type: 'year', 'r12', 'quarter'
+            price_type: 'mean', 'low', 'high'
 
         Returns:
-            Dictionary mapping Instrument ID -> KPI value
+            Dictionary mapping {year: KPI value}
         """
-        url = f"{self.BASE_URL}/instruments/global/kpis/{kpi_id}/{period_type}/{calculation}?authKey={self.api_key}"
+
+        url = f"{self.BASE_URL}/instruments/{instrument_id}/kpis/{kpi_id}/{report_type}/{price_type}/history?authKey={self.api_key}"
         response = self.session.get(url)
         response.raise_for_status()
         data = response.json()
 
         results = {}
         for entry in data.get("values", []):
-            instrument_id = entry.get("i")
-            value = entry.get("n")
-            if instrument_id is not None and value is not None:
-                results[instrument_id] = value
+            year = entry.get("y")
+            value = entry.get("v")
+            if year is not None and value is not None:
+                results[year] = value
 
         return results

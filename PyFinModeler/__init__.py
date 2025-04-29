@@ -20,3 +20,5 @@ from .visualization.chart_generator import ChartGenerator
 
 from .data.borsdata_collector import BorsdataCollector
 from .data.borsdata_kpi_collector import BorsdataKPICollector
+
+from .utils.markdown_utils import create_markdown_table

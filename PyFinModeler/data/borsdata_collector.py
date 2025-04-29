@@ -6,43 +6,43 @@ from typing import Optional, List
 from ..core.company import Company
 from ..core.financial_item import FinancialItem
 from ..core.financial_item_type import FinancialItemType
-from ..kpi.kpi_manager import KPIManager
-from .borsdata_kpi_collector import BorsdataKPICollector
 
 class BorsdataCollector:
     BASE_URL = "https://apiservice.borsdata.se/v1"
 
     def __init__(self, api_key: str):
         """
-        Initialize BorsdataCollector.
+        Initializes the BorsdataCollector.
 
         Args:
-            api_key: Börsdata API Key
+            api_key: Your Börsdata API Key
         """
         self.api_key = api_key
         self.session = requests.Session()
+
+        # Börsdata authentication
         auth_string = f"{self.api_key}:"
         auth_base64 = base64.b64encode(auth_string.encode('utf-8')).decode('utf-8')
         self.session.headers.update({
             "Authorization": f"Basic {auth_base64}"
         })
-        self.kpi_collector = BorsdataKPICollector(api_key=self.api_key)
 
     def fetch_company_by_name(
         self,
         name: str,
-        report_type: str = "year",  # For financials
-        period_type: str = "1year",  # For KPIs
+        report_type: str = "year",  # 'year', 'r12', 'quarter'
         max_count: int = 5
     ) -> Optional[Company]:
         """
-        Fetch a company by name, populate financials and KPIs.
+        Fetch company financials by partial name match.
 
         Args:
             name: Company name (partial match allowed)
             report_type: 'year', 'r12', 'quarter'
-            period_type: '1year', '3year', '5year'
-            max_count: Number of years/quarters to pull
+            max_count: Number of historical periods to fetch
+
+        Returns:
+            Company object with populated Income, Balance, Cash Flow statements
         """
         companies = self.get_all_companies()
         matching = [c for c in companies if name.lower() in c["name"].lower()]
@@ -52,7 +52,7 @@ class BorsdataCollector:
             return None
 
         company_info = matching[0]
-        company_id = company_info["insId"]  # ✅ Correct key
+        company_id = company_info["insId"]
 
         company = Company(
             name=company_info["name"],
@@ -61,12 +61,16 @@ class BorsdataCollector:
         )
 
         self._populate_financials(company, company_id, report_type, max_count)
-        self._populate_kpis(company, company_id, period_type)
 
-        return company
+        return company, company_id, company_info
 
-    def get_all_companies(self) -> list:
-        """Return a list of all companies."""
+    def get_all_companies(self) -> List[dict]:
+        """
+        Fetch all companies from Börsdata.
+
+        Returns:
+            List of companies
+        """
         url = f"{self.BASE_URL}/instruments?authKey={self.api_key}"
         response = self.session.get(url)
         response.raise_for_status()
@@ -74,7 +78,15 @@ class BorsdataCollector:
         return data.get("instruments", [])
 
     def _populate_financials(self, company: Company, company_id: int, report_type: str, max_count: int) -> None:
-        """Fetch and attach Income, Balance, Cash Flow reports."""
+        """
+        Fetch Income, Balance, Cash Flow reports and populate company.
+
+        Args:
+            company: Company object
+            company_id: Börsdata Instrument ID
+            report_type: 'year', 'r12', 'quarter'
+            max_count: Number of periods
+        """
         reports = self._get_reports(company_id, report_type=report_type, max_count=max_count)
 
         if not reports:
@@ -86,7 +98,7 @@ class BorsdataCollector:
         for field_name in reports[0].keys():
             if field_name in ["year", "period", "report_Date", "report_Start_Date", "report_End_Date",
                               "currency", "currency_Ratio", "broken_Fiscal_Year", "instrument"]:
-                continue  # Skip metadata fields
+                continue  # Skip meta fields
 
             financial_item = FinancialItem(
                 name=field_name,
@@ -99,6 +111,7 @@ class BorsdataCollector:
                 if value is not None:
                     financial_item.add_historical(year, value)
 
+            # Attach to the correct statement
             if financial_item.item_type in (FinancialItemType.REVENUE, FinancialItemType.EXPENSE, FinancialItemType.RESULT):
                 company.income_statement.add_item(financial_item)
             elif financial_item.item_type in (FinancialItemType.ASSET, FinancialItemType.LIABILITY, FinancialItemType.EQUITY):
@@ -106,39 +119,18 @@ class BorsdataCollector:
             else:
                 company.cash_flow_statement.add_item(financial_item)
 
-    def _populate_kpis(self, company: Company, company_id: int, period_type: str) -> None:
-        """Fetch KPIs and attach them into the company's KPIManager."""
-        kpis_to_fetch = {
-            "PE Ratio (Live)": 2,
-            "PS Ratio": 3,
-            "PB Ratio": 4,
-            "ROE %": 33,
-            "ROA %": 34,
-            "EV/EBITDA": 11,
-            "Gross Margin %": 28,
-            "EBITDA Margin %": 32,
-            "EBIT Margin %": 29,
-            "Net Margin %": 30,
-            "FCF Margin %": 31,
-            "Debt Ratio": 40,
-            "Net Debt/EBITDA": 42,
-            "Payout Ratio %": 20,
-            "Earnings Growth %": 97,
-            "Revenue Growth %": 94,
-            "Number of Shares": 61,
-        }
-
-        for kpi_name, kpi_id in kpis_to_fetch.items():
-            try:
-                kpi_values = self.kpi_collector.fetch_kpis(kpi_id=kpi_id, period_type=period_type, calculation="mean")
-                value = kpi_values.get(company_id)
-                if value is not None:
-                    company.kpi_manager.add_kpi(kpi_name, str(value))
-            except Exception as e:
-                print(f"Warning: Failed to fetch KPI {kpi_name}: {str(e)}")
-
     def _get_reports(self, company_id: int, report_type: str, max_count: int) -> List[dict]:
-        """Fetch financial reports."""
+        """
+        Fetch raw financial reports from Börsdata.
+
+        Args:
+            company_id: Instrument ID
+            report_type: 'year', 'r12', 'quarter'
+            max_count: periods back
+
+        Returns:
+            List of reports
+        """
         url = f"{self.BASE_URL}/instruments/{company_id}/reports/{report_type}?authKey={self.api_key}&maxCount={max_count}&original=0"
         response = self.session.get(url)
         response.raise_for_status()
@@ -146,7 +138,9 @@ class BorsdataCollector:
         return data.get("reports", [])
 
     def _get_field_type_mapping(self) -> dict:
-        """Map Börsdata fields to FinancialItemTypes."""
+        """
+        Map Börsdata financial fields to FinancialItemTypes.
+        """
         return {
             "revenues": FinancialItemType.REVENUE,
             "net_Sales": FinancialItemType.REVENUE,
