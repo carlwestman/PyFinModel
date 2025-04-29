@@ -2,7 +2,7 @@
 
 import json
 from ..kpi.kpi_manager import KPIManager
-from .financial_statement import IncomeStatement, BalanceSheet, CashFlowStatement
+from .financial_statement import IncomeStatement, BalanceSheet, CashFlowStatement, OtherStatement
 from .financial_item import FinancialItem
 from .financial_item_type import FinancialItemType
 
@@ -14,6 +14,7 @@ class Company:
         self.income_statement = IncomeStatement()
         self.balance_sheet = BalanceSheet()
         self.cash_flow_statement = CashFlowStatement()
+        self.other_financial_items = OtherStatement()
         self.kpi_manager = KPIManager(self)  # 🚀 New: KPI manager attached automatically
 
     def save_to_json(self, file_path: str) -> None:

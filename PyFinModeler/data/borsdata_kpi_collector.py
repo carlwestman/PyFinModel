@@ -30,21 +30,21 @@ class BorsdataKPICollector:
         kpi_id: int,
         report_type: str = "year",  # 'year', 'r12', 'quarter'
         price_type: str = "mean"    # 'mean', 'low', 'high'
-    ) -> Dict[int, float]:
+    ) -> Dict[str, float]:
         """
         Fetch historical KPI values for a specific instrument.
 
         Args:
-            instrument_id: Company Instrument ID (e.g., 1605 for Atlas Copco B)
+            instrument_id: Company Instrument ID
             kpi_id: KPI ID
             report_type: 'year', 'r12', 'quarter'
             price_type: 'mean', 'low', 'high'
 
         Returns:
-            Dictionary mapping {year: KPI value}
+            Dictionary mapping {period: KPI value}, where period is "2024", "2024Q2", etc.
         """
 
-        url = f"{self.BASE_URL}/instruments/{instrument_id}/kpis/{kpi_id}/{report_type}/{price_type}/history?authKey={self.api_key}"
+        url = f"{self.BASE_URL}/instruments/{instrument_id}/kpis/{kpi_id}/{report_type}/{price_type}/history?authKey={self.api_key}&maxCount=20"
         response = self.session.get(url)
         response.raise_for_status()
         data = response.json()
@@ -52,8 +52,22 @@ class BorsdataKPICollector:
         results = {}
         for entry in data.get("values", []):
             year = entry.get("y")
+            quarter = entry.get("p")
             value = entry.get("v")
-            if year is not None and value is not None:
-                results[year] = value
+
+            if year is None or value is None:
+                continue
+
+            if report_type == "year":
+                period_key = str(year)
+            elif report_type in ("quarter", "r12"):
+                if quarter is not None:
+                    period_key = f"{year}Q{quarter}"
+                else:
+                    period_key = str(year)  # fallback
+            else:
+                period_key = str(year)
+
+            results[period_key] = value
 
         return results

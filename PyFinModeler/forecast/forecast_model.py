@@ -106,4 +106,5 @@ class ForecastModel:
             self.company.income_statement.get_item(name)
             or self.company.balance_sheet.get_item(name)
             or self.company.cash_flow_statement.get_item(name)
+            or self.company.other_financial_items.get_item(name)
         )

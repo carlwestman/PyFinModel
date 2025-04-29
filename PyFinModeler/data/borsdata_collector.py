@@ -116,8 +116,11 @@ class BorsdataCollector:
                 company.income_statement.add_item(financial_item)
             elif financial_item.item_type in (FinancialItemType.ASSET, FinancialItemType.LIABILITY, FinancialItemType.EQUITY):
                 company.balance_sheet.add_item(financial_item)
-            else:
+            elif financial_item.item_type in (FinancialItemType.CASH_FLOW_OPERATING, FinancialItemType.CASH_FLOW_INVESTING,
+                                               FinancialItemType.CASH_FLOW_FINANCING, FinancialItemType.CASH_FLOW_SUMMARY):
                 company.cash_flow_statement.add_item(financial_item)
+            else:
+                company.other_financial_items.add_item(financial_item)
 
     def _get_reports(self, company_id: int, report_type: str, max_count: int) -> List[dict]:
         """

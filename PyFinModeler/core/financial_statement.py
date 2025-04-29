@@ -39,3 +39,10 @@ class CashFlowStatement(FinancialStatement):
 
     def validate(self) -> bool:
         return True
+    
+class OtherStatement(FinancialStatement):
+    def __init__(self):
+        super().__init__("Other Financial Statement")
+
+    def validate(self) -> bool:
+        return True
