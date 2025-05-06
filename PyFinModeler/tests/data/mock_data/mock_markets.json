@@ -1,0 +1,18 @@
+{
+  "markets": [
+    {
+      "id": 1,
+      "name": "Stockholm",
+      "countryId": 1,
+      "isIndex": false,
+      "exchangeName": "Nasdaq Stockholm"
+    },
+    {
+      "id": 2,
+      "name": "Oslo",
+      "countryId": 2,
+      "isIndex": false,
+      "exchangeName": "Oslo Børs"
+    }
+  ]
+}

@@ -1,0 +1,1966 @@
+{
+    "P/E": [
+        {
+            "kpi_id": 2,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year Mean"
+        },
+        {
+            "kpi_id": 2,
+            "report_type": "year",
+            "price_type": "low",
+            "description": "Year Low"
+        },
+        {
+            "kpi_id": 2,
+            "report_type": "year",
+            "price_type": "high",
+            "description": "Year High"
+        },
+        {
+            "kpi_id": 2,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12 Mean"
+        },
+        {
+            "kpi_id": 2,
+            "report_type": "r12",
+            "price_type": "low",
+            "description": "R12 Low"
+        },
+        {
+            "kpi_id": 2,
+            "report_type": "r12",
+            "price_type": "high",
+            "description": "R12 High"
+        }
+    ],
+    "P/S": [
+        {
+            "kpi_id": 3,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year Mean"
+        },
+        {
+            "kpi_id": 3,
+            "report_type": "year",
+            "price_type": "low",
+            "description": "Year Low"
+        },
+        {
+            "kpi_id": 3,
+            "report_type": "year",
+            "price_type": "high",
+            "description": "Year High"
+        },
+        {
+            "kpi_id": 3,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12 Mean"
+        },
+        {
+            "kpi_id": 3,
+            "report_type": "r12",
+            "price_type": "low",
+            "description": "R12 Low"
+        },
+        {
+            "kpi_id": 3,
+            "report_type": "r12",
+            "price_type": "high",
+            "description": "R12 High"
+        }
+    ],
+    "P/B": [
+        {
+            "kpi_id": 4,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year Mean"
+        },
+        {
+            "kpi_id": 4,
+            "report_type": "year",
+            "price_type": "low",
+            "description": "Year Low"
+        },
+        {
+            "kpi_id": 4,
+            "report_type": "year",
+            "price_type": "high",
+            "description": "Year High"
+        },
+        {
+            "kpi_id": 4,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12 Mean"
+        },
+        {
+            "kpi_id": 4,
+            "report_type": "r12",
+            "price_type": "low",
+            "description": "R12 Low"
+        },
+        {
+            "kpi_id": 4,
+            "report_type": "r12",
+            "price_type": "high",
+            "description": "R12 High"
+        }
+    ],
+    "P/EBIT": [
+        {
+            "kpi_id": 75,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year Mean"
+        },
+        {
+            "kpi_id": 75,
+            "report_type": "year",
+            "price_type": "low",
+            "description": "Year Low"
+        },
+        {
+            "kpi_id": 75,
+            "report_type": "year",
+            "price_type": "high",
+            "description": "Year High"
+        },
+        {
+            "kpi_id": 75,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12 Mean"
+        },
+        {
+            "kpi_id": 75,
+            "report_type": "r12",
+            "price_type": "low",
+            "description": "R12 Low"
+        },
+        {
+            "kpi_id": 75,
+            "report_type": "r12",
+            "price_type": "high",
+            "description": "R12 High"
+        }
+    ],
+    "P/EBITDA": [
+        {
+            "kpi_id": 74,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year Mean"
+        },
+        {
+            "kpi_id": 74,
+            "report_type": "year",
+            "price_type": "low",
+            "description": "Year Low"
+        },
+        {
+            "kpi_id": 74,
+            "report_type": "year",
+            "price_type": "high",
+            "description": "Year High"
+        },
+        {
+            "kpi_id": 74,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12 Mean"
+        },
+        {
+            "kpi_id": 74,
+            "report_type": "r12",
+            "price_type": "low",
+            "description": "R12 Low"
+        },
+        {
+            "kpi_id": 74,
+            "report_type": "r12",
+            "price_type": "high",
+            "description": "R12 High"
+        }
+    ],
+    "P/FCF": [
+        {
+            "kpi_id": 76,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year Mean"
+        },
+        {
+            "kpi_id": 76,
+            "report_type": "year",
+            "price_type": "low",
+            "description": "Year Low"
+        },
+        {
+            "kpi_id": 76,
+            "report_type": "year",
+            "price_type": "high",
+            "description": "Year High"
+        },
+        {
+            "kpi_id": 76,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12 Mean"
+        },
+        {
+            "kpi_id": 76,
+            "report_type": "r12",
+            "price_type": "low",
+            "description": "R12 Low"
+        },
+        {
+            "kpi_id": 76,
+            "report_type": "r12",
+            "price_type": "high",
+            "description": "R12 High"
+        }
+    ],
+    "EV/E": [
+        {
+            "kpi_id": 12,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year Mean"
+        },
+        {
+            "kpi_id": 12,
+            "report_type": "year",
+            "price_type": "low",
+            "description": "Year Low"
+        },
+        {
+            "kpi_id": 12,
+            "report_type": "year",
+            "price_type": "high",
+            "description": "Year High"
+        },
+        {
+            "kpi_id": 12,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12 Mean"
+        },
+        {
+            "kpi_id": 12,
+            "report_type": "r12",
+            "price_type": "low",
+            "description": "R12 Low"
+        },
+        {
+            "kpi_id": 12,
+            "report_type": "r12",
+            "price_type": "high",
+            "description": "R12 High"
+        }
+    ],
+    "EV/S": [
+        {
+            "kpi_id": 15,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year Mean"
+        },
+        {
+            "kpi_id": 15,
+            "report_type": "year",
+            "price_type": "low",
+            "description": "Year Low"
+        },
+        {
+            "kpi_id": 15,
+            "report_type": "year",
+            "price_type": "high",
+            "description": "Year High"
+        },
+        {
+            "kpi_id": 15,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12 Mean"
+        },
+        {
+            "kpi_id": 15,
+            "report_type": "r12",
+            "price_type": "low",
+            "description": "R12 Low"
+        },
+        {
+            "kpi_id": 15,
+            "report_type": "r12",
+            "price_type": "high",
+            "description": "R12 High"
+        }
+    ],
+    "EV/EBIT": [
+        {
+            "kpi_id": 10,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year Mean"
+        },
+        {
+            "kpi_id": 10,
+            "report_type": "year",
+            "price_type": "low",
+            "description": "Year Low"
+        },
+        {
+            "kpi_id": 10,
+            "report_type": "year",
+            "price_type": "high",
+            "description": "Year High"
+        },
+        {
+            "kpi_id": 10,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12 Mean"
+        },
+        {
+            "kpi_id": 10,
+            "report_type": "r12",
+            "price_type": "low",
+            "description": "R12 Low"
+        },
+        {
+            "kpi_id": 10,
+            "report_type": "r12",
+            "price_type": "high",
+            "description": "R12 High"
+        }
+    ],
+    "EV/EBITDA": [
+        {
+            "kpi_id": 11,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year Mean"
+        },
+        {
+            "kpi_id": 11,
+            "report_type": "year",
+            "price_type": "low",
+            "description": "Year Low"
+        },
+        {
+            "kpi_id": 11,
+            "report_type": "year",
+            "price_type": "high",
+            "description": "Year High"
+        },
+        {
+            "kpi_id": 11,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12 Mean"
+        },
+        {
+            "kpi_id": 11,
+            "report_type": "r12",
+            "price_type": "low",
+            "description": "R12 Low"
+        },
+        {
+            "kpi_id": 11,
+            "report_type": "r12",
+            "price_type": "high",
+            "description": "R12 High"
+        }
+    ],
+    "EV/OP": [
+        {
+            "kpi_id": 78,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year Mean"
+        },
+        {
+            "kpi_id": 78,
+            "report_type": "year",
+            "price_type": "low",
+            "description": "Year Low"
+        },
+        {
+            "kpi_id": 78,
+            "report_type": "year",
+            "price_type": "high",
+            "description": "Year High"
+        },
+        {
+            "kpi_id": 78,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12 Mean"
+        },
+        {
+            "kpi_id": 78,
+            "report_type": "r12",
+            "price_type": "low",
+            "description": "R12 Low"
+        },
+        {
+            "kpi_id": 78,
+            "report_type": "r12",
+            "price_type": "high",
+            "description": "R12 High"
+        }
+    ],
+    "EV/FCF": [
+        {
+            "kpi_id": 13,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year Mean"
+        },
+        {
+            "kpi_id": 13,
+            "report_type": "year",
+            "price_type": "low",
+            "description": "Year Low"
+        },
+        {
+            "kpi_id": 13,
+            "report_type": "year",
+            "price_type": "high",
+            "description": "Year High"
+        },
+        {
+            "kpi_id": 13,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12 Mean"
+        },
+        {
+            "kpi_id": 13,
+            "report_type": "r12",
+            "price_type": "low",
+            "description": "R12 Low"
+        },
+        {
+            "kpi_id": 13,
+            "report_type": "r12",
+            "price_type": "high",
+            "description": "R12 High"
+        }
+    ],
+    "P/B/tang": [
+        {
+            "kpi_id": 18,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year Mean"
+        },
+        {
+            "kpi_id": 18,
+            "report_type": "year",
+            "price_type": "low",
+            "description": "Year Low"
+        },
+        {
+            "kpi_id": 18,
+            "report_type": "year",
+            "price_type": "high",
+            "description": "Year High"
+        },
+        {
+            "kpi_id": 18,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12 Mean"
+        },
+        {
+            "kpi_id": 18,
+            "report_type": "r12",
+            "price_type": "low",
+            "description": "R12 Low"
+        },
+        {
+            "kpi_id": 18,
+            "report_type": "r12",
+            "price_type": "high",
+            "description": "R12 High"
+        }
+    ],
+    "EBIT/EV": [
+        {
+            "kpi_id": 17,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year Mean"
+        },
+        {
+            "kpi_id": 17,
+            "report_type": "year",
+            "price_type": "low",
+            "description": "Year Low"
+        },
+        {
+            "kpi_id": 17,
+            "report_type": "year",
+            "price_type": "high",
+            "description": "Year High"
+        },
+        {
+            "kpi_id": 17,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12 Mean"
+        },
+        {
+            "kpi_id": 17,
+            "report_type": "r12",
+            "price_type": "low",
+            "description": "R12 Low"
+        },
+        {
+            "kpi_id": 17,
+            "report_type": "r12",
+            "price_type": "high",
+            "description": "R12 High"
+        }
+    ],
+    "BorsVarde": [
+        {
+            "kpi_id": 50,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year Mean"
+        },
+        {
+            "kpi_id": 50,
+            "report_type": "year",
+            "price_type": "low",
+            "description": "Year Low"
+        },
+        {
+            "kpi_id": 50,
+            "report_type": "year",
+            "price_type": "high",
+            "description": "Year High"
+        },
+        {
+            "kpi_id": 50,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12 Mean"
+        },
+        {
+            "kpi_id": 50,
+            "report_type": "r12",
+            "price_type": "low",
+            "description": "R12 Low"
+        },
+        {
+            "kpi_id": 50,
+            "report_type": "r12",
+            "price_type": "high",
+            "description": "R12 High"
+        }
+    ],
+    "EV": [
+        {
+            "kpi_id": 49,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year Mean"
+        },
+        {
+            "kpi_id": 49,
+            "report_type": "year",
+            "price_type": "low",
+            "description": "Year Low"
+        },
+        {
+            "kpi_id": 49,
+            "report_type": "year",
+            "price_type": "high",
+            "description": "Year High"
+        },
+        {
+            "kpi_id": 49,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12 Mean"
+        },
+        {
+            "kpi_id": 49,
+            "report_type": "r12",
+            "price_type": "low",
+            "description": "R12 Low"
+        },
+        {
+            "kpi_id": 49,
+            "report_type": "r12",
+            "price_type": "high",
+            "description": "R12 High"
+        }
+    ],
+    "Bruttomarginal": [
+        {
+            "kpi_id": 28,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 28,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        },
+        {
+            "kpi_id": 28,
+            "report_type": "quarter",
+            "price_type": "mean",
+            "description": "Quarter"
+        }
+    ],
+    "EBITDA/Marginal": [
+        {
+            "kpi_id": 32,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 32,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        },
+        {
+            "kpi_id": 32,
+            "report_type": "quarter",
+            "price_type": "mean",
+            "description": "Quarter"
+        }
+    ],
+    "Rorelsemarginal": [
+        {
+            "kpi_id": 29,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 29,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        },
+        {
+            "kpi_id": 29,
+            "report_type": "quarter",
+            "price_type": "mean",
+            "description": "Quarter"
+        }
+    ],
+    "Vinstmarginal": [
+        {
+            "kpi_id": 30,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 30,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        },
+        {
+            "kpi_id": 30,
+            "report_type": "quarter",
+            "price_type": "mean",
+            "description": "Quarter"
+        }
+    ],
+    "OperativtKassaflodesMarginal": [
+        {
+            "kpi_id": 51,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 51,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        },
+        {
+            "kpi_id": 51,
+            "report_type": "quarter",
+            "price_type": "mean",
+            "description": "Quarter"
+        }
+    ],
+    "FCF/Marginal": [
+        {
+            "kpi_id": 31,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 31,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        },
+        {
+            "kpi_id": 31,
+            "report_type": "quarter",
+            "price_type": "mean",
+            "description": "Quarter"
+        }
+    ],
+    "ROE": [
+        {
+            "kpi_id": 33,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 33,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "ROA": [
+        {
+            "kpi_id": 34,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 34,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "ROA ExGoodwill": [
+        {
+            "kpi_id": 35,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 35,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "ROIC": [
+        {
+            "kpi_id": 37,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 37,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "ROC": [
+        {
+            "kpi_id": 36,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 36,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "Omsattningshastighet": [
+        {
+            "kpi_id": 38,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 38,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "Soliditet": [
+        {
+            "kpi_id": 39,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 39,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "Skuldsattningsgrad": [
+        {
+            "kpi_id": 40,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 40,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "Balanslikviditet": [
+        {
+            "kpi_id": 44,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 44,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "Nettoskuldsattning": [
+        {
+            "kpi_id": 41,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 41,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "Nettoskuld/EBITDA": [
+        {
+            "kpi_id": 42,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 42,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "Rorelsekapital/LangfristigaSkulder": [
+        {
+            "kpi_id": 45,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 45,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "RorelsekapitalProc": [
+        {
+            "kpi_id": 93,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 93,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "ImmateriellaTillgangarProc": [
+        {
+            "kpi_id": 92,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 92,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "Kassa/Proc": [
+        {
+            "kpi_id": 46,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 46,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "Capex/Proc": [
+        {
+            "kpi_id": 25,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 25,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        },
+        {
+            "kpi_id": 25,
+            "report_type": "quarter",
+            "price_type": "mean",
+            "description": "Quarter"
+        }
+    ],
+    "Utdelning/FCF": [
+        {
+            "kpi_id": 26,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 26,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "Vinst/FCF": [
+        {
+            "kpi_id": 27,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 27,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        },
+        {
+            "kpi_id": 27,
+            "report_type": "quarter",
+            "price_type": "mean",
+            "description": "Quarter"
+        }
+    ],
+    "Omsattning(M)": [
+        {
+            "kpi_id": 53,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 53,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        },
+        {
+            "kpi_id": 53,
+            "report_type": "quarter",
+            "price_type": "mean",
+            "description": "Quarter"
+        }
+    ],
+    "Bruttoresultat(M)": [
+        {
+            "kpi_id": 135,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 135,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        },
+        {
+            "kpi_id": 135,
+            "report_type": "quarter",
+            "price_type": "mean",
+            "description": "Quarter"
+        }
+    ],
+    "EBITDA/(M)": [
+        {
+            "kpi_id": 54,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 54,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        },
+        {
+            "kpi_id": 54,
+            "report_type": "quarter",
+            "price_type": "mean",
+            "description": "Quarter"
+        }
+    ],
+    "Rorelseresultat(M)": [
+        {
+            "kpi_id": 55,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 55,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        },
+        {
+            "kpi_id": 55,
+            "report_type": "quarter",
+            "price_type": "mean",
+            "description": "Quarter"
+        }
+    ],
+    "VinstForeSkatt(M)": [
+        {
+            "kpi_id": 125,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 125,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        },
+        {
+            "kpi_id": 125,
+            "report_type": "quarter",
+            "price_type": "mean",
+            "description": "Quarter"
+        }
+    ],
+    "Vinst(M)": [
+        {
+            "kpi_id": 56,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 56,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        },
+        {
+            "kpi_id": 56,
+            "report_type": "quarter",
+            "price_type": "mean",
+            "description": "Quarter"
+        }
+    ],
+    "ImmateriellaTillgangar(M)": [
+        {
+            "kpi_id": 126,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 126,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "MateriellaTillgangar(M)": [
+        {
+            "kpi_id": 127,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 127,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "AnlaggningsTillgangar(M)": [
+        {
+            "kpi_id": 129,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 129,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "Omsattningstillgangar(M)": [
+        {
+            "kpi_id": 131,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 131,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "KassaLikvidaMedel(M)": [
+        {
+            "kpi_id": 130,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 130,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "TotalaTillgangar(M)": [
+        {
+            "kpi_id": 57,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 57,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "EgetKapital(M)": [
+        {
+            "kpi_id": 58,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 58,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "LangfristigaSkulder(M)": [
+        {
+            "kpi_id": 132,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 132,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "KortfristigaSkulder(M)": [
+        {
+            "kpi_id": 133,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 133,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "TotalaSkulder(M)": [
+        {
+            "kpi_id": 137,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 137,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "Nettoskuld(M)": [
+        {
+            "kpi_id": 60,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 60,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "TotalaSkulderOchEgetKapital(M)": [
+        {
+            "kpi_id": 134,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 134,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "OperativKassaflode(M)": [
+        {
+            "kpi_id": 62,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 62,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        },
+        {
+            "kpi_id": 62,
+            "report_type": "quarter",
+            "price_type": "mean",
+            "description": "Quarter"
+        }
+    ],
+    "Capex(M)": [
+        {
+            "kpi_id": 64,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 64,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        },
+        {
+            "kpi_id": 64,
+            "report_type": "quarter",
+            "price_type": "mean",
+            "description": "Quarter"
+        }
+    ],
+    "KassaflodeFinansiering(M)": [
+        {
+            "kpi_id": 138,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 138,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        },
+        {
+            "kpi_id": 138,
+            "report_type": "quarter",
+            "price_type": "mean",
+            "description": "Quarter"
+        }
+    ],
+    "AretsKassaflode(M)": [
+        {
+            "kpi_id": 65,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 65,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        },
+        {
+            "kpi_id": 65,
+            "report_type": "quarter",
+            "price_type": "mean",
+            "description": "Quarter"
+        }
+    ],
+    "FrittKassaflode(M)": [
+        {
+            "kpi_id": 63,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 63,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        },
+        {
+            "kpi_id": 63,
+            "report_type": "quarter",
+            "price_type": "mean",
+            "description": "Quarter"
+        }
+    ],
+    "AntalAktier": [
+        {
+            "kpi_id": 61,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 61,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "Utdelning/Aktie": [
+        {
+            "kpi_id": 7,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 7,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "Direktavkastning": [
+        {
+            "kpi_id": 1,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year Mean"
+        },
+        {
+            "kpi_id": 1,
+            "report_type": "year",
+            "price_type": "low",
+            "description": "Year Low"
+        },
+        {
+            "kpi_id": 1,
+            "report_type": "year",
+            "price_type": "high",
+            "description": "Year High"
+        },
+        {
+            "kpi_id": 1,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12 Mean"
+        },
+        {
+            "kpi_id": 1,
+            "report_type": "r12",
+            "price_type": "low",
+            "description": "R12 Low"
+        },
+        {
+            "kpi_id": 1,
+            "report_type": "r12",
+            "price_type": "high",
+            "description": "R12 High"
+        }
+    ],
+    "OrdinarDirektavkastning": [
+        {
+            "kpi_id": 148,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year Mean"
+        },
+        {
+            "kpi_id": 148,
+            "report_type": "year",
+            "price_type": "low",
+            "description": "Year Low"
+        },
+        {
+            "kpi_id": 148,
+            "report_type": "year",
+            "price_type": "high",
+            "description": "Year High"
+        },
+        {
+            "kpi_id": 148,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12 Mean"
+        },
+        {
+            "kpi_id": 148,
+            "report_type": "r12",
+            "price_type": "low",
+            "description": "R12 Low"
+        },
+        {
+            "kpi_id": 148,
+            "report_type": "r12",
+            "price_type": "high",
+            "description": "R12 High"
+        }
+    ],
+    "OrdinarUtdelning": [
+        {
+            "kpi_id": 66,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 66,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "Utdelningsandel": [
+        {
+            "kpi_id": 20,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 20,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "Vinsttillvaxt": [
+        {
+            "kpi_id": 97,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 97,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        },
+        {
+            "kpi_id": 97,
+            "report_type": "quarter",
+            "price_type": "mean",
+            "description": "Quarter"
+        }
+    ],
+    "EBITTillvaxt": [
+        {
+            "kpi_id": 96,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 96,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        },
+        {
+            "kpi_id": 96,
+            "report_type": "quarter",
+            "price_type": "mean",
+            "description": "Quarter"
+        }
+    ],
+    "Omsattningstillvaxt": [
+        {
+            "kpi_id": 94,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 94,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        },
+        {
+            "kpi_id": 94,
+            "report_type": "quarter",
+            "price_type": "mean",
+            "description": "Quarter"
+        }
+    ],
+    "EgetKapitalTillvaxt": [
+        {
+            "kpi_id": 99,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 99,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "TotalaTillgangarTillvaxt": [
+        {
+            "kpi_id": 100,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 100,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "P/EX": [
+        {
+            "kpi_id": 9,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year Mean"
+        },
+        {
+            "kpi_id": 9,
+            "report_type": "year",
+            "price_type": "low",
+            "description": "Year Low"
+        },
+        {
+            "kpi_id": 9,
+            "report_type": "year",
+            "price_type": "high",
+            "description": "Year High"
+        },
+        {
+            "kpi_id": 9,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12 Mean"
+        },
+        {
+            "kpi_id": 9,
+            "report_type": "r12",
+            "price_type": "low",
+            "description": "R12 Low"
+        },
+        {
+            "kpi_id": 9,
+            "report_type": "r12",
+            "price_type": "high",
+            "description": "R12 High"
+        }
+    ],
+    "PEG": [
+        {
+            "kpi_id": 19,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year Mean"
+        },
+        {
+            "kpi_id": 19,
+            "report_type": "year",
+            "price_type": "low",
+            "description": "Year Low"
+        },
+        {
+            "kpi_id": 19,
+            "report_type": "year",
+            "price_type": "high",
+            "description": "Year High"
+        },
+        {
+            "kpi_id": 19,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12 Mean"
+        },
+        {
+            "kpi_id": 19,
+            "report_type": "r12",
+            "price_type": "low",
+            "description": "R12 Low"
+        },
+        {
+            "kpi_id": 19,
+            "report_type": "r12",
+            "price_type": "high",
+            "description": "R12 High"
+        }
+    ],
+    "Utdelningstillvaxt": [
+        {
+            "kpi_id": 98,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 98,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "Omsattning/Aktie": [
+        {
+            "kpi_id": 5,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 5,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        },
+        {
+            "kpi_id": 5,
+            "report_type": "quarter",
+            "price_type": "mean",
+            "description": "Quarter"
+        }
+    ],
+    "Vinst/Aktie": [
+        {
+            "kpi_id": 6,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 6,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        },
+        {
+            "kpi_id": 6,
+            "report_type": "quarter",
+            "price_type": "mean",
+            "description": "Quarter"
+        }
+    ],
+    "EgetKapital/Aktie": [
+        {
+            "kpi_id": 8,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 8,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        },
+        {
+            "kpi_id": 8,
+            "report_type": "quarter",
+            "price_type": "mean",
+            "description": "Quarter"
+        }
+    ],
+    "FCF/Aktie": [
+        {
+            "kpi_id": 23,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 23,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        },
+        {
+            "kpi_id": 23,
+            "report_type": "quarter",
+            "price_type": "mean",
+            "description": "Quarter"
+        }
+    ],
+    "Nettoskuld/Aktie": [
+        {
+            "kpi_id": 73,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 73,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "EBITDA/Aktie": [
+        {
+            "kpi_id": 71,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 71,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        },
+        {
+            "kpi_id": 71,
+            "report_type": "quarter",
+            "price_type": "mean",
+            "description": "Quarter"
+        }
+    ],
+    "EBIT/Aktie": [
+        {
+            "kpi_id": 70,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 70,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        },
+        {
+            "kpi_id": 70,
+            "report_type": "quarter",
+            "price_type": "mean",
+            "description": "Quarter"
+        }
+    ],
+    "OperativKassaflode/Aktie": [
+        {
+            "kpi_id": 68,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 68,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        },
+        {
+            "kpi_id": 68,
+            "report_type": "quarter",
+            "price_type": "mean",
+            "description": "Quarter"
+        }
+    ],
+    "AretsKassaflode/Aktie": [
+        {
+            "kpi_id": 69,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 69,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        },
+        {
+            "kpi_id": 69,
+            "report_type": "quarter",
+            "price_type": "mean",
+            "description": "Quarter"
+        }
+    ],
+    "FinansiellaTillgangar(M)": [
+        {
+            "kpi_id": 128,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 128,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        }
+    ],
+    "AretsKassaflodeMarginal": [
+        {
+            "kpi_id": 140,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 140,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        },
+        {
+            "kpi_id": 140,
+            "report_type": "quarter",
+            "price_type": "mean",
+            "description": "Quarter"
+        }
+    ],
+    "FCF/Proc": [
+        {
+            "kpi_id": 24,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        },
+        {
+            "kpi_id": 24,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12"
+        },
+        {
+            "kpi_id": 24,
+            "report_type": "quarter",
+            "price_type": "mean",
+            "description": "Quarter"
+        }
+    ],
+    "E/EV": [
+        {
+            "kpi_id": 16,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year Mean"
+        },
+        {
+            "kpi_id": 16,
+            "report_type": "year",
+            "price_type": "low",
+            "description": "Year Low"
+        },
+        {
+            "kpi_id": 16,
+            "report_type": "year",
+            "price_type": "high",
+            "description": "Year High"
+        },
+        {
+            "kpi_id": 16,
+            "report_type": "r12",
+            "price_type": "mean",
+            "description": "R12 Mean"
+        },
+        {
+            "kpi_id": 16,
+            "report_type": "r12",
+            "price_type": "low",
+            "description": "R12 Low"
+        },
+        {
+            "kpi_id": 16,
+            "report_type": "r12",
+            "price_type": "high",
+            "description": "R12 High"
+        }
+    ],
+    "TotalDirektavkastning": [
+        {
+            "kpi_id": 22,
+            "report_type": "year",
+            "price_type": "mean",
+            "description": "Year"
+        }
+    ]
+}

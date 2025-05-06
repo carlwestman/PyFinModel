@@ -1,0 +1,36 @@
+{
+  "instruments": [
+    {
+      "insId": 101,
+      "name": "Company A",
+      "urlName": "company-a",
+      "instrument": 1,
+      "isin": "SE000000001",
+      "ticker": "COMPA",
+      "yahoo": "COMPA.ST",
+      "sectorId": 10,
+      "marketId": 1,
+      "branchId": 1,
+      "countryId": 1,
+      "listingDate": "2010-01-01T00:00:00",
+      "stockPriceCurrency": "SEK",
+      "reportCurrency": "SEK"
+    },
+    {
+      "insId": 102,
+      "name": "Company B",
+      "urlName": "company-b",
+      "instrument": 2,
+      "isin": "SE000000002",
+      "ticker": "COMPB",
+      "yahoo": "COMPB.ST",
+      "sectorId": 20,
+      "marketId": 2,
+      "branchId": 2,
+      "countryId": 2,
+      "listingDate": "2015-05-15T00:00:00",
+      "stockPriceCurrency": "NOK",
+      "reportCurrency": "NOK"
+    }
+  ]
+}

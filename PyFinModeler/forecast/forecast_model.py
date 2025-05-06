@@ -6,6 +6,7 @@ from .assumption_set import AssumptionSet
 from .forecast_rule import ForecastRule
 from ..core.financial_item import FinancialItem
 from ..kpi.kpi_manager import KPIManager  # Updated import path
+from .statistical_forecaster import StatisticalForecaster
 
 class ForecastModel:
     def __init__(
@@ -97,6 +98,26 @@ class ForecastModel:
                     rule.custom_function(item, self)
                 else:
                     raise ValueError("Custom function missing.")
+            
+            elif rule.method == "statistical":
+                item = self._find_item(rule.item_name)
+                if not item:
+                    raise ValueError(f"FinancialItem '{rule.item_name}' not found.")
+
+                forecaster = StatisticalForecaster(item.historical)
+                params = rule.params
+
+                forecasted = forecaster.forecast_normal(
+                    periods=self.periods,
+                    mode=params.get("mode", "mean"),
+                    std_multiplier=params.get("std_multiplier", 1.0),
+                    trend=params.get("trend", 0.0),
+                    frequency=params.get("frequency", "year"),
+                    random_seed=params.get("random_seed")
+                )
+
+                for period, value in forecasted.items():
+                    item.add_forecasted(period, value)
 
             else:
                 raise ValueError(f"Unknown method '{rule.method}'.")
@@ -106,5 +127,6 @@ class ForecastModel:
             self.company.income_statement.get_item(name)
             or self.company.balance_sheet.get_item(name)
             or self.company.cash_flow_statement.get_item(name)
-            or self.company.other_financial_items.get_item(name)
+            or self.company.kpi_statement.get_item(name)  # Added KPI Statement
+            or self.company.other_financials_statement.get_item(name)
         )

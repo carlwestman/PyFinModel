@@ -1,0 +1,14 @@
+{
+  "branches": [
+    {
+      "id": 1,
+      "name": "Technology",
+      "sectorId": 10
+    },
+    {
+      "id": 2,
+      "name": "Healthcare",
+      "sectorId": 20
+    }
+  ]
+}

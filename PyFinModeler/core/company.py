@@ -2,20 +2,28 @@
 
 import json
 from ..kpi.kpi_manager import KPIManager
-from .financial_statement import IncomeStatement, BalanceSheet, CashFlowStatement, OtherStatement
+from .financial_statement import (
+    IncomeStatement,
+    BalanceSheet,
+    CashFlowStatement,
+    KPIStatement,
+    OtherFinancialsStatement,
+)
 from .financial_item import FinancialItem
 from .financial_item_type import FinancialItemType
 
 class Company:
-    def __init__(self, name: str, ticker: str, currency: str):
+    def __init__(self, name: str, ticker: str, currency: str, description: str = None):
         self.name = name
         self.ticker = ticker
         self.currency = currency
+        self.description = description  # New description field
         self.income_statement = IncomeStatement()
         self.balance_sheet = BalanceSheet()
         self.cash_flow_statement = CashFlowStatement()
-        self.other_financial_items = OtherStatement()
-        self.kpi_manager = KPIManager(self)  # 🚀 New: KPI manager attached automatically
+        self.kpi_statement = KPIStatement()  # New KPI Statement
+        self.other_financials_statement = OtherFinancialsStatement()
+        self.kpi_manager = KPIManager(self)  # Attach KPI manager
 
     def save_to_json(self, file_path: str) -> None:
         with open(file_path, "w", encoding="utf-8") as f:
@@ -31,27 +39,52 @@ class Company:
             "name": self.name,
             "ticker": self.ticker,
             "currency": self.currency,
+            "description": self.description,  # Include description in serialization
             "financials": {
                 "income_statement": self._statement_to_dict(self.income_statement),
                 "balance_sheet": self._statement_to_dict(self.balance_sheet),
-                "cash_flow_statement": self._statement_to_dict(self.cash_flow_statement)
-            }
+                "cash_flow_statement": self._statement_to_dict(self.cash_flow_statement),
+                "kpi_statement": self._statement_to_dict(self.kpi_statement),
+                "other_financials_statement": self._statement_to_dict(self.other_financials_statement),
+            },
         }
 
     def _statement_to_dict(self, statement) -> dict:
-        return {item_name: {
-            "type": item.item_type.value,
-            "historical": item.historical,
-            "forecasted": item.forecasted
-        } for item_name, item in statement.items.items()}
+        return {
+            item_name: {
+                "type": item.item_type.value,
+                "historical": item.historical,
+                "forecasted": item.forecasted,
+            }
+            for item_name, item in statement.items.items()
+        }
 
     def _load_from_dict(self, data: dict) -> None:
         self.name = data["name"]
         self.ticker = data["ticker"]
         self.currency = data["currency"]
+        self.description = data.get("description")  # Load description
 
         for item_name, item_data in data["financials"]["income_statement"].items():
-            item = FinancialItem(name=item_name, item_type=FinancialItemType(item_data["type"]))
+            item = FinancialItem(
+                name=item_name, item_type=FinancialItemType(item_data["type"])
+            )
             item.historical = item_data.get("historical", {})
             item.forecasted = item_data.get("forecasted", {})
             self.income_statement.add_item(item)
+
+    def get_statement_summary(self) -> dict:
+        """
+        Returns a summary of the financial statements and the names of the items they contain.
+
+        Returns:
+            A dictionary where the keys are the names of the financial statements
+            and the values are lists of item names in each statement.
+        """
+        return {
+            "income_statement": list(self.income_statement.items.keys()),
+            "balance_sheet": list(self.balance_sheet.items.keys()),
+            "cash_flow_statement": list(self.cash_flow_statement.items.keys()),
+            "kpi_statement": list(self.kpi_statement.items.keys()),
+            "other_financials_statement": list(self.other_financials_statement.items.keys()),
+        }

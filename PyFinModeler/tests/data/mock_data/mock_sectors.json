@@ -1,0 +1,12 @@
+{
+  "sectors": [
+    {
+      "id": 10,
+      "name": "Technology"
+    },
+    {
+      "id": 20,
+      "name": "Healthcare"
+    }
+  ]
+}

@@ -15,7 +15,6 @@ if not api_key:
 
 # Step 2: Initialize collectors
 collector = BorsdataCollector(api_key=api_key)
-kpi_collector = BorsdataKPICollector(api_key=api_key)
 
 # Step 3: Fetch Company (Atlas Copco B)
 company, instrument_id, company_info = collector.fetch_company_by_name("Atlas Copco B", report_type="year")
@@ -29,7 +28,7 @@ instrument_id = 1605  # Atlas Copco B
 
 # Fetch Net Income Margin (Net Margin %)
 try:
-    net_income_margin_values = kpi_collector.fetch_kpis(instrument_id, kpi_id=30, report_type="year", price_type="mean")
+    net_income_margin_values = collector.fetch_kpis(instrument_id, kpi_id=30, report_type="year", price_type="mean")
     net_income_margin = list(net_income_margin_values.values())[0]
 except Exception as e:
     print(f"Warning: Could not fetch Net Income Margin. Error: {str(e)}")

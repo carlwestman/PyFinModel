@@ -1,0 +1,31 @@
+{
+  "instrument": 101,
+  "reports": [
+    {
+      "year": 2022,
+      "period": 1,
+      "revenues": 1000000.0,
+      "gross_Income": 500000.0,
+      "operating_Income": 300000.0,
+      "profit_Before_Tax": 250000.0,
+      "profit_To_Equity_Holders": 200000.0,
+      "earnings_Per_Share": 10.0,
+      "number_Of_Shares": 20000,
+      "dividend": 5.0,
+      "currency": "SEK"
+    },
+    {
+      "year": 2023,
+      "period": 1,
+      "revenues": 1100000.0,
+      "gross_Income": 550000.0,
+      "operating_Income": 330000.0,
+      "profit_Before_Tax": 275000.0,
+      "profit_To_Equity_Holders": 220000.0,
+      "earnings_Per_Share": 11.0,
+      "number_Of_Shares": 20000,
+      "dividend": 5.5,
+      "currency": "SEK"
+    }
+  ]
+}
