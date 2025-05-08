@@ -88,13 +88,19 @@ class BorsdataCollector:
                 return desc["text"]
         return None
 
-    def fetch_company(self, name: Optional[str] = None, company_id: Optional[int] = None) -> Optional[Company]:
+    def fetch_company(
+        self,
+        name: Optional[str] = None,
+        company_id: Optional[int] = None,
+        report_type: str = "year"  # 'year' or 'quarter'
+    ) -> Optional[Company]:
         """
         Fetch a company by name or company_id and populate its description, financials, and standard KPIs.
 
         Args:
             name: The name of the company (optional).
             company_id: The Börsdata instrument ID of the company (optional).
+            report_type: The type of report ('year' or 'quarter'). Defaults to "year".
 
         Returns:
             A Company object with its description, financials, and standard KPIs populated, or None if not found.
@@ -135,8 +141,17 @@ class BorsdataCollector:
             description=description
         )
         
+        # Set max_count for financials
+        if report_type == "year":
+            max_count = 20  # For yearly reports, fetch up to 20 years
+        else:  
+            max_count = 40  # For quarterly and r12 reports, fetch up to 40 quarters
+            
         # Populate financials
-        self._populate_financials(company, company_id, report_type="year", max_count=5)
+        self._populate_financials(company, company_id, 
+                                  report_type=report_type, 
+                                  max_count=max_count
+                                  )
 
         # Populate standard KPIs
         standard_kpis = [
@@ -160,7 +175,7 @@ class BorsdataCollector:
         for kpi_name in standard_kpis:
             try:
                 # Fetch KPI and automatically add it to the KPIStatement
-                self.fetch_kpi_by_name(company, kpi_name)
+                self.fetch_kpi_by_name(company, kpi_name, report_type=report_type)
             except ValueError as e:
                 print(f"Warning: Could not fetch KPI '{kpi_name}'. Reason: {e}")
 
@@ -180,7 +195,7 @@ class BorsdataCollector:
         reports = self._get_reports(company_id, report_type=report_type, max_count=max_count)
 
         if not reports:
-            print(f"No reports found for company ID {company_id}")
+            print(f"No reports found for company ID {company_id} with report_type '{report_type}'.")
             return
 
         field_type_mapping = self._get_field_type_mapping()
@@ -196,10 +211,21 @@ class BorsdataCollector:
             )
 
             for report in reports:
-                year = str(report["year"])
+                if report_type == "year":
+                    period_key = str(report["year"])
+                elif report_type in ("quarter", "r12"):
+                    # Handle both quarter and r12
+                    quarter = report.get("period")
+                    if quarter is not None:
+                        period_key = f"{report['year']}Q{quarter}"
+                    else:
+                        period_key = str(report["year"])  # Fallback to year if quarter is missing
+                else:
+                    raise ValueError(f"Unsupported report type: {report_type}")
+
                 value = report.get(field_name)
                 if value is not None:
-                    financial_item.add_historical(year, value)
+                    financial_item.add_historical(period_key, value)
 
             # Attach to the correct statement
             if financial_item.item_type in (FinancialItemType.REVENUE, FinancialItemType.EXPENSE, FinancialItemType.RESULT):
@@ -287,11 +313,17 @@ class BorsdataCollector:
         """
         if not self.current_company_id:
             raise ValueError("No company has been fetched. Please fetch a company first.")
+        
+        # Set max_count for financials
+        if report_type == "year":
+            max_count = 20  # For yearly reports, fetch up to 20 years
+        else:  
+            max_count = 40  # For quarterly and r12 reports, fetch up to 40 quarters
 
         endpoint = f"/instruments/{self.current_company_id}/kpis/{kpi_id}/{report_type}/{price_type}/history"
         params = {
             "authKey": self.api_key,
-            "maxCount": 20
+            "maxCount": max_count
         }
         data = self.fetch_data(endpoint, params)
 
@@ -334,9 +366,9 @@ class BorsdataCollector:
         kpi_name: str,
         report_type: str = "year",
         price_type: str = "mean"
-    ) -> Dict[str, float]:
+    ) -> Optional[Dict[str, float]]:
         """
-        Fetch historical KPI values by KPI name, report type, and price type.
+        Fetch historical KPI values by KPI name, report type, and price type, with fallback logic.
 
         Args:
             company: The Company object to which the KPI belongs.
@@ -345,10 +377,10 @@ class BorsdataCollector:
             price_type: The price type ('mean', 'low', 'high'). Defaults to "mean".
 
         Returns:
-            Dictionary mapping {period: KPI value}, where period is "2024", "2024Q2", etc.
+            Dictionary mapping {period: KPI value}, where period is "2024", "2024Q2", etc., or None if skipped.
 
         Raises:
-            ValueError: If the KPI name is not found in the mapping or the specified report_type/price_type is invalid.
+            ValueError: If the KPI name is not found in the mapping.
         """
         # Get the KPI parameters mapping
         kpi_params_mapping = self._get_kpi_params_mapping()
@@ -357,22 +389,39 @@ class BorsdataCollector:
         if kpi_name not in kpi_params_mapping:
             raise ValueError(f"KPI name '{kpi_name}' not found in the KPI parameters mapping.")
 
-        # Find the matching KPI parameters
-        for kpi_params in kpi_params_mapping[kpi_name]:
-            if kpi_params["report_type"] == report_type and kpi_params["price_type"] == price_type:
-                # Fetch the KPI using the fetch_kpi method
-                return self.fetch_kpi(
-                    company=company,
-                    kpi_id=kpi_params["kpi_id"],
-                    kpi_name=kpi_name,
-                    report_type=report_type,
-                    price_type=price_type
-                )
+        # Define fallback logic for report types
+        fallback_order = {
+            "r12": ["r12", "quarter"],  # r12 falls back to quarter
+            "quarter": ["quarter", "r12"],  # quarter falls back to r12
+            "year": ["year"]  # year cannot fall back
+        }
 
-        # If no matching parameters are found, raise an error
-        raise ValueError(
-            f"No matching KPI parameters found for KPI name '{kpi_name}' with report_type '{report_type}' and price_type '{price_type}'."
-        )
+        # Get the fallback sequence for the requested report_type
+        fallback_sequence = fallback_order.get(report_type, [report_type])
+
+        # Iterate through the fallback sequence
+        for fallback_type in fallback_sequence:
+            for kpi_params in kpi_params_mapping[kpi_name]:
+                if kpi_params["report_type"] == fallback_type and kpi_params["price_type"] == price_type:
+                    if fallback_type != report_type:
+                        # Print a warning if a fallback occurs
+                        print(f"Warning: Falling back from report_type '{report_type}' to '{fallback_type}' for KPI '{kpi_name}'.")
+
+                    try:
+                        # Fetch the KPI using the fetch_kpi method
+                        return self.fetch_kpi(
+                            company=company,
+                            kpi_id=kpi_params["kpi_id"],
+                            kpi_name=kpi_name,
+                            report_type=fallback_type,
+                            price_type=price_type
+                        )
+                    except Exception as e:
+                        print(f"Warning: Failed to fetch KPI '{kpi_name}' with report_type '{fallback_type}'. Reason: {e}")
+
+        # If no valid combination is found, skip the KPI
+        print(f"Warning: Skipping KPI '{kpi_name}' as no valid report_type exists for the given parameters.")
+        return None
 
     def _get_kpi_params_mapping(self) -> Dict[str, List[Dict[str, str]]]:
         """

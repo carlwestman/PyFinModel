@@ -1,6 +1,7 @@
 # PyFinModeler/core/company.py
 
 import json
+import pandas as pd
 from ..kpi.kpi_manager import KPIManager
 from .financial_statement import (
     IncomeStatement,
@@ -53,8 +54,8 @@ class Company:
         return {
             item_name: {
                 "type": item.item_type.value,
-                "historical": item.historical,
-                "forecasted": item.forecasted,
+                "historical": dict(sorted(item.historical.items())),  # Sort historical data
+                "forecasted": dict(sorted(item.forecasted.items())),  # Sort forecasted data
             }
             for item_name, item in statement.items.items()
         }
@@ -88,3 +89,58 @@ class Company:
             "kpi_statement": list(self.kpi_statement.items.keys()),
             "other_financials_statement": list(self.other_financials_statement.items.keys()),
         }
+
+    def get_statement_as_dataframe(self, statement_name: str) -> pd.DataFrame:
+        """
+        Returns a pandas DataFrame representation of the specified financial statement.
+
+        Args:
+            statement_name: The name of the financial statement (e.g., "income_statement", "balance_sheet", "kpi_statement").
+
+        Returns:
+            A pandas DataFrame containing the historical and forecasted data for the specified statement.
+
+        Raises:
+            ValueError: If the specified statement name is invalid.
+        """
+        # Map statement names to their corresponding attributes
+        statement_mapping = {
+            "income_statement": self.income_statement,
+            "balance_sheet": self.balance_sheet,
+            "cash_flow_statement": self.cash_flow_statement,
+            "kpi_statement": self.kpi_statement,
+            "other_financials_statement": self.other_financials_statement,
+        }
+
+        # Validate the statement name
+        if statement_name not in statement_mapping:
+            raise ValueError(f"Invalid statement name: {statement_name}. Valid options are: {list(statement_mapping.keys())}")
+
+        # Get the statement object
+        statement = statement_mapping[statement_name]
+
+        # Prepare data for the DataFrame
+        data = []
+        for item_name, item in statement.items.items():
+            row = {"Item": item_name}
+            row.update(item.historical)  # Add historical data
+            row.update({f"Forecasted_{k}": v for k, v in item.forecasted.items()})  # Add forecasted data
+            data.append(row)
+
+        # Create the DataFrame
+        df = pd.DataFrame(data)
+        df.set_index("Item", inplace=True)  # Set the item name as the index
+
+        # Sort columns by year and quarter (ascending order)
+        def sort_key(col):
+            if col.startswith("Forecasted_"):
+                return float('inf')  # Place forecasted columns at the end
+            if "Q" in col:  # Handle quarterly data
+                year, quarter = col.split("Q")
+                return int(year) * 10 + int(quarter)  # Sort by year and quarter
+            return int(col)  # Handle yearly data
+
+        sorted_columns = sorted(df.columns, key=sort_key)
+        df = df[sorted_columns]
+
+        return df

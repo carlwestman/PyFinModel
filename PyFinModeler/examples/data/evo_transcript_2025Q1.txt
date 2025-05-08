@@ -1,0 +1,476 @@
+Evolution AB (publ) (EVVTY) Q1 2025 Earnings Call Transcript
+Evolution AB (publ) (OTCPK:EVVTY) Q1 2025 Results Conference Call April 30, 2025 3:00 AM ET
+
+Company Participants
+
+Martin Carlesund - Chief Executive Officer
+Joakim Andersson - Chief Financial Officer
+
+Conference Call Participants
+
+Oscar Ronnkvist - ABG Sundal Collier
+Raymond Ke - Nordea
+Georg Attling - Pareto Securities
+Pravin Gondhale - Barclays
+Martin Arnell - DNB
+Monique Pollard - Citi
+Virendra Chauhan - AlphaValue
+Ed Young - Morgan Stanley
+
+Martin Carlesund
+
+Good morning. Welcome, everyone, to the presentation of Evolution's report for the first quarter 2025. My name is Martin Carlesund, and I'm the CEO of Evolution. With me are our new CFO, Joakim Andersson. Joakim joined Evolution in February, and it's great to have you here, Joakim.
+
+I will start with some comments on our performance in the quarter and then hand over to you, Joakim, for a closer look at our financials. After that, I will conclude with an outlook and then we'll open up the call for questions.
+
+Next slide, please. Let's start with the financial and operational highlights of the quarter. And first, let's focus on the operative side, operations side, as 2 activities have had certain impact on the financial result. The first one, which I highlighted already in the last earnings call, is that we started to add new technical measures that aim to more effectively ringfence the markets with a local regulation and ensure that our games are only available with locally licensed operators for markets where such license exists. Following the introduction of such ringfencing measures in the U.K., we have moved forward with other European markets in the quarter.
+
+This is a proactive measure. It's a move from our side in markets with high -- sorry, from our side in markets with high channelization that the ringfencing has had limited impact. However, in markets with low channelization, we have had seen a drop in revenue. As you know, we believe that regulation is positive over time, and we see support the regulators in the ways we can. However, as a supplier, our impact is actually quite small as channelization is highly dependent on the regulatory framework and the parameters used such as tax rates, proactive measures.
+
+If it is too expensive or to complicate to play, the players will disappear. That is the reality. And for regulator, it's about finding the right balance to keep the channelization on high level and to protect the most vulnerable players.
+
+The second activity with an impact of the result is the continued work to stop the criminal cyber activity that we face in Asia. We are making constant progress, but the measures do impact the network in general and the revenue is in line with what we have seen in the last couple of quarters. Despite the ringfencing effects and the cyber challenges, I'm positive about 2025 as a whole, with a very strong product road map that we only just have started to execute on, together with a solid underlying demand.
+
+Both online and live casino are at early stages on the global level, and we will continue to expand to meet demand. In the first quarter, we have opened a new studio in Romania, which partly makes up for the capacity that we've lost in Georgia. Later this year, we will open a new state-of-the-art studios in Brazil and in Philippines as well as a second studio in Michigan, while also expanding at full speed in Malta, Colombia, Argentina, New Jersey and Philadelphia to name a few. I believe that this is a testament to our stance that we will always prioritize growth and to take market shares over margin. Even though we had various challenges in the quarter, we do not compromise with our long-term beliefs and priorities.
+
+In Georgia, the situation for Evolution continues to be stable, and we operate without disruptions. Our decision to not increase capacity remains as before as we want to achieve a better balance with less dependencies on a single studio. And while we are speaking about Georgia, I would like -- would also like to highlight that we have engaged a highly reputable accounting firm, one of the large four, to conduct a full independent investigation of our operations. They have complete access to the Georgia studio and have reviewed several hundreds of documents and materials. The conclusions are not a surprise to us.
+
+Salary levels are well above comparable roles, any issues with work environment have been dealt with years ago and in direct connection with when they occur. And the violence of our code of conduct have been handled as they should and strike participation levels have not even been close to what was reported in the media. I could go on about this for a long time, but I think we'll leave it there. For Evolution, the strike is a past chapter, and we will continue to provide a great workplace for our employees in Georgia and elsewhere.
+
+Let's say a few words on the actual financials. Net revenue came in at EUR 520.9 million, corresponding to year-on-year growth of 3.9%. EBITDA decreased 1.1% compared to last year, and the EBITDA margin comes in at 65.6%, which is somewhat below our estimated full year guidance of 66% to 68%. As a reminder, we foresaw a softer margin in 2025 compared to 2024 due to both the ringfencing in regulated markets and the cyberattack countermeasures in Asia. We do, however, believe that the second half of the year will be stronger than the first half, and we keep our full year guidance as before.
+
+Our Live segment was impacted by the European and Asian development with the revenue coming in at EUR 448.7 million, corresponding to growth of 4%. We continue to see good momentum in North America and also believe that activity in Latin America will pick up supported by the new regulation in Brazil. RNG revenues totaled EUR 72.3 million, growing year-on-year by 3.1%, a development that was softer than in the fourth quarter. I believe we can grow more and our Nolimit City brand is a testament to that as they have several successful game launches in the quarter.
+
+To conclude this slide, I'm, of course, not happy with our current growth, but the measures behind it are important for our overall work to increase the gap to competition. We face challenges that we meet. Any issues we see, we fix. So that will become even better every day, and we have an exceptional position to do so with the best product in the world, in a structurally growing market, combined with a scalable model, a strong balance sheet and a team of more than 22,000 employees to realize the potential.
+
+Next slide, please. Moving on to the operational KPIs, which are the headcount numbers and the game rounds index. Looking at the headcount, we have kept the pace in recruitment in the quarter. And for the first time ever, we surpassed 22,000 employees, corresponding to an 8.4% year-on-year growth. In order to meet demand for our services, we need to increase our footprint and expand our teams on a global level.
+
+I'm very proud of the workplace we offer and our dedication to offering career opportunities at all our sites. We are currently doing a major recruitment push in Brazil and in Philippines, ahead of the opening of our new studios there.
+
+The game rounds index can be seen as a general indicator of activity throughout our network over time. For an individual quarter, it does not always correlate with the revenue development, which is evident this time. The increase of 10.9% in the quarter is mostly related to the progress of our game shows that have a huge -- that are hugely popular.
+
+Next slide, please. Now we are on the most exciting slide and the foundation of our business, the offer -- to offer the best and most innovative games in the world. We refer to 2024 and 2025 as our product lead years. And this year, in total -- we will in total release more than 110 games across our portfolio. At the ICE Exhibition in Barcelona in January, we showcased many of the headline games and the response from operators was truly great.
+
+We are now in a launch mode and among the releases in the first quarter are War, our version of casino war game with an engaging setting and simple rules, and Race Track, which is a great example of how RNG game can be elevated using a live host. We also released Bet Stacker Blackjack, which is an exciting take on the classic game.
+
+In the beginning of April, we launched one of the most anticipated games of the year, Marble Race. It's as simple as it is exciting. Players bet on which marble ball that would win the race or the top 2 winning combination. It's a fast-paced, super easy to take part in or actually just to watch. Reception has been great.
+
+Among the upcoming releases, we have Super Color game, which is just a few weeks away, 3 big dice, quick rounds with single, double and triple betting options with a multiplier of 1,000. This will be hit. And then during the summer, we have what I believe is the most anticipated game of them all, Ice Fishing. It's a speed game show with a money wheel unlike anything else. The live host will catch for multipliers fish in icy water. It's truly something different. It's spectacular.
+
+On the RNG side, we have launched 17 new games in the quarter and another 19 are set for release in the second one. The titles from Nolimit City are doing exceptionally, and we are currently released some of the best slots on the market. One of the games that I would like to highlight is Duck Hunters, which have -- was released in February, and that has been off to a tremendous start. You would have to go back a very long time to find something similar in terms of performance. So all in all, there's a lot happening right now, and I'm very excited about both the latest and upcoming releases.
+
+We continue to push the limit and provide the most thrilling player experiences, further widening gap competition and creating value for all our stakeholders.
+
+Next slide, please. Moving on to the geographic breakdown with the revenue performance across our regions. What stands out in the quarter is the development in Europe, which was more or less flat compared to the first quarter in 2024 and down by 6% from the fourth quarter. You can clearly see the effect from the ringfencing in these numbers. What is important to remember is that the underlying demand remains strong and that we through the ringfences measures have created an even stronger foundation that we can grow from.
+
+Asia remained on a stable level compared to last quarters with a revenue of EUR 201.9 million and growth of 2.2% compared to the first quarter of 2024.
+
+As for Europe underlying demand is strong and we see great potential as soon as we have come to terms for the ongoing issues with the cyber criminality. North America continues its strong performance with year-on-year growth of 15%, Live games are still at early stages in the region, and we find new audiences every day. In February, we expanded our partnership with bet365 in New Jersey, adding to its live dealer offering already available in Pennsylvania. LatAm exhibited 9.7% growth year-on-year, but declined slightly compared to the fourth quarter.
+
+We highlighted already in the last report of Brazil's new regulation had experienced some initial teething problems, which have had an effect on the performance. It's not unusual that it takes some time for us to settle in with the new regulation, but we see activity picking up.
+
+Other regions, mainly consist of Africa and continues to show good year-on-year growth. The development worth noticing is the jump in revenues from regulated markets now with a 45% share of total net revenues which is mostly connected to the Brazil regulation.
+
+With that, I will hand over to Joakim, for a closer look at our financials. Next slide, please.
+
+Joakim Andersson
+
+Thank you, Martin, and good morning to all of you on this call. I'm very happy to be on board and I hope to see you all in person at some point in time. I will now present the financial performance in some greater detail, starting on this page, page 6, with our financial development over time.
+
+As you can see on this page, we are on a long-term growth trajectory. But as shown in the report this morning and as presented by Martin earlier, we currently have some headwind. Net revenue in the first quarter was EUR 520.9 million, corresponding to a growth of 3.9% compared to the first quarter last year. On a constant currency basis, we estimate the growth to 6.1% as we saw continued negative effects from changes in the currency rates. Our reported EBITDA was EUR 342 million in the quarter, meaning that our margin was 65.6%, which is at the bottom end of our full year forecast of 66% to 68%.
+
+Let's go to the next slide. Here, we will take a closer look at the profit and loss statement. Let's start with the breakup of our revenue. We have this quarter as a consequence of the earlier mentioned issues, showing a relatively low growth both in Live and RNG with a growth of 4% in Live and 3.1% in RNG year-on-year. You all know that we expect more from both categories, and we are working hard, as Martin mentioned, on solving these issues.
+
+Our total operating expenses in the first quarter amounted to EUR 217.5 million, which is 15% higher than the same period last year. This is a result of our increased investments into new products and new capacity, which in turn will give us continued growth in the future.
+
+Our personnel expenses amounted to EUR 119.9 million, which is an increase of 12%, driven by the net addition of 1,686 employees year-on-year. The other operating expenses amounted to EUR 59 million, which corresponds to a 21% increase. Within this number, we, for instance, see a high level of legal costs as we, as a large global business, more frequently are engaging in complicated projects where external legal advice is necessary. This cost line will over time, as for the other cost lines, scale and grow slower than our revenue.
+
+It's also worth while reminding that compared to last year, we are now running our studios with a less favorable, more costly resource mix as a consequence of the measures we took last year in connection with the strike in Georgia. This partial move of operations out of Georgia is having a negative impact when comparing the cost base and profitability year-on-year. As part of our ordinary cost of business, we are obviously monitoring the news flow related to the potential changes to global tariffs. At this point in time and from what we know today, we do not expect a material impact on our results. The financial items were negative EUR 1.3 million this quarter, primarily driven by revaluation of bank balances.
+
+Next, tax was EUR 47.5 million in the quarter with a tax rate of 15.7%. And all in all, we had a profit for the period of EUR 254.7 million, and with 205.6 million shares outstanding, we get to earnings per share, EPS of EUR 1.24, which is almost in line with the EUR 1.25 we had for the same period a year ago.
+
+Let's move on to the next slide. And now on Page 8, where we have an overview of our operating cash flow and capital expenditures. Let's start by looking at the graph to the right, which shows the development of our CapEx. Total CapEx in the period amounted to EUR 33.6 million and was split almost evenly between intangible and tangible assets. Investments into intangible assets was EUR 16.6 million and were mainly spent on development of new games and technical improvements to the platform.
+
+The tangible investments were EUR 17 million mainly spent on studio space, gaming tables, servers and other technical equipment. In the graph, you can also see how our investment pace relate to the last 4 quarters revenue for each of the periods. As communicated last quarter, we expect the full year CapEx to amount to around EUR 140 million.
+
+If we take a look at the graph to the left, we can see the development of our cash flow and our cash conversion. The operating cash flow after investments amounted to EUR 327.7 million in the quarter with a very strong cash conversion of 87%. It's a good improvement, both year-on-year as well as quarter-on-quarter with a good contribution this quarter from a reduction of the accounts receivables.
+
+Finally for me, some brief comments on our financial position on the next page. On this page, you will, as usual, find a summary of the balance sheet for the first quarter compared to what it looked like at the end of last quarter. As you can see, our strong financial position remains. We have our bond portfolio of EUR 101.6 million and the cash balance of EUR 969.2 million. Our total equity amounts to almost EUR 4.2 billion.
+
+There are no material changes during the quarter.
+
+We have our Annual General Meeting on the 9th of May. And if the shareholders vote in favor of the Board's recommendation, we will, which is in line with our capital allocation framework, pay a cash dividend of EUR 2.8 per share, which means that total amount of EUR 572 million will be paid to our shareholders. During the first quarter, we used our mandate to repurchase approximately 2.1 million own shares in the market for a total amount of EUR 154.1 million. As communicated last quarter, the Board has decided to repurchase shares for EUR 500 million during the year, and we will start the next program of the repurchases within short.
+
+With that, I will hand it back to Martin for his closing remarks.
+
+Martin Carlesund
+
+Thank you, Joakim. So let's summarize the presentation and then move to the Q&A session. Financially, we've been off to a slow start this year due to the ongoing continued issues in Asia and the self-imposed proactive stricter ringfencing of regulated markets in Europe. As a consequence and in combination with ongoing investments into expansion, our profitability in Q1 comes out on the low end of our estimated full year range. And this is, of course, not good, even though we always have quarterly variations.
+
+The revenue growth has simply been slower than what we have capacity for.
+
+However, am I unhappy with the overall development in the quarter? Definitely not, because everything that we have done support the mission to increase the gap to competition. 2025 will be yet another great year for Evolution. That is the bottom line. We are more paranoid than ever and working with an incredibly strong product roadmap and continued studio expansion.
+
+We see strong underlying demand, both the studios in the Philippines and Brazil will be state-of-the-art, using all expertise and experience that we have built during our soon 20 years history. On the game side, as I said before, we will deliver experiences that players have never seen before.
+
+As Joakim mentioned, next week, we will hold our Annual General Meeting that, among other things, will resolve on the Board's dividend proposal. We remain committed to deliver strong shareholder returns under our capital allocation framework.
+
+As a last remark, as you know, we always aim to make Evolution a bit better every day, and we have no time to waste. We are already entering May with -- which practically means that Christmas is around the corner. It's full speed ahead for all our teams, and I look forward to what the rest of the year will bring.
+
+With that, as an end remark, we move to questions. Next slide, please. And the first one out is?
+
+Question-and-Answer Session
+
+Operator
+
+[Operator Instructions] Question comes from Oscar Ronnkvist from ABG Sundal Collier.
+
+Oscar Ronnkvist
+
+So my first question would just be on the ringfencing in Europe. So you said it started in February, and it obviously had quite a big impact on the numbers in Europe. So could you say anything on sort of when that started in February? Was it like 1 month contribution? Or was it 2 months contribution in Q1?
+
+Martin Carlesund
+
+It's a good estimate to count on 2 months contribution in the first quarter.
+
+Oscar Ronnkvist
+
+Perfect. And then I know it's very difficult even for you. But I mean, you obviously had 2 percentage points FX headwinds and the -- it appears like 2 to 3 percentage point headwind from European ringfencing in Q1. Is it in any way possible to sort of quantify the cyber attacks impact so we can get a little bit better sense of the underlying growth in the quarter?
+
+Martin Carlesund
+
+It's very hard to quantify the Asian growth. I mean, we have now 3 quarters in a row where we are essentially flat. If you go back 3 quarters before that or even a little bit longer, you will see that we quarter-on-quarter had a much better growth. Of course, we might not see that we -- even if we turn this around in a couple of quarters that come back to that level. But of course, we should have a quarter-on-quarter growth.
+
+Oscar Ronnkvist
+
+All right. Perfect. So -- and then just again on the cyber attacks. So you have gotten that from, I think you started mentioning that in Q3 last year. So this is now the third quarter that you mentioned it.
+
+So can you talk a little bit about how the development has been going? I mean, have you seen more pressures than you initially did after you started that with -- just thinking on the revenue side, if you limit the access to some aggregators possibly and so on. So is the headwind becoming bigger initially when you stop the distribution to some aggregators and we will see that picking up in the next few quarters? Or has it been kind of stable over the last couple of quarters?
+
+Martin Carlesund
+
+We have good traction on the actions we take. The actions we take in Asia is, of course, partially shutting down and partially growing. And then the sum of that right now is coming out as flat. We're in that process. We're doing the right thing.
+
+And then the actions that we take will eventually move to a greater increase than what we take away.
+
+Oscar Ronnkvist
+
+Perfect. And I guess there's no additional comments on any timing when we could expect the quarter-over-quarter growth to pick up?
+
+Martin Carlesund
+
+I don't have any more insight on that right now. No.
+
+Operator
+
+The next question comes from Raymond Ke from Nordea.
+
+Raymond Ke
+
+A couple of questions from me as well. Starting on Europe and the sales there impacted by your ringfencing actions. Could you provide some color on whether the growth pace of the countries with high channelization in more recent quarters has been higher or lower than countries with sort of lower channelization? Just to understand the underlying growth pace of Europe.
+
+Martin Carlesund
+
+We don't -- I won't comment on the growth in particular countries. In general, we have seen a blended rate of 9%. And I wouldn't say that any of the countries stick out in any extreme way. Gives you some kind of color, I hope.
+
+Raymond Ke
+
+Yes. That was helpful. And then I noticed on the LatAm, sales fall sequentially here in Q1. Trying to understand, was this in line with your expectation? And could you maybe share what you think is behind this development?
+
+Martin Carlesund
+
+Yes, I can give -- there I can give you a little bit more color. It's as simple as Latin America, except Brazil, is doing very well. We're growing very nicely there. And then we have Brazil, which is the regulation just came into force, and that has made that market decline and grow from a lower level. That, I would say, have taken a little bit slower start than expected, but we have not changed any of our outlook. It looks very promising, and there's 230 million people living in Brazil. So the future looks good.
+
+Raymond Ke
+
+Great. And just another question also on Asia and the technical actions you implemented there. You talked about shutting down and also growing in some parts and yielding a flat top line result. But could you maybe elaborate a bit more on technical actions that you've implemented? Or is it just about essentially shutting down in certain parts?
+
+Martin Carlesund
+
+We work both technically as well as commercially, of course, with the customers that we have there and we often relate to technical implementations, and we are simply solidifying our protection against theft in our -- and detecting of theft. And then when we do, we shut down parts of it and the other parts continue to grow.
+
+Operator
+
+The next question comes from Georg Attling from Pareto Securities.
+
+Georg Attling
+
+A couple of questions for me, starting also with Europe. I'm trying to understand if the ringfencing that you've done, is that -- have you done that all at once? Or will we see ringfencing in more markets in, let's say, Q2?
+
+Martin Carlesund
+
+There won't be more markets. We're sort of done with what we're supposed to do or proactively did, and it all more or less happened in the beginning of February. So as I said before, 2 months out of 3.
+
+Georg Attling
+
+Okay. So a new base from early February, I guess, you can read that as.
+
+Martin Carlesund
+
+Correct.
+
+Georg Attling
+
+And second question on Lat Am. You mentioned Brazil here. I know that the start was quite weak, but could you comment on the trend throughout the quarter as that growth pace in Brazil picked up towards the end of Q1?
+
+Martin Carlesund
+
+We see activity increasing, and I want to leave it with that, not to make sort of quarter-on-quarter projections.
+
+Georg Attling
+
+Okay. Perfect. And just a final question on Asia. So you shut down some of your aggregators or distribution partners here. Could you comment on the growth excluding the aggregators that you shut down?
+
+Martin Carlesund
+
+It's a combined measure. There is a lot of things going on. And I don't want to go into details. It will only lead us in the wrong direction. We are in combination, getting good traction of what we are doing, but essentially, we are still flat in revenue, and we hope to change that, of course.
+
+Operator
+
+[Operator Instructions].
+
+Pravin Gondhale
+
+I'm Pravin Gondhale from Barclays. So firstly, on Europe, the growth was notably softer in Europe, but B2C reporting -- B2C operators reporting that we have seen so far and then the regulators data in Italy suggests that in the large markets like U.K. and Italy, the growth was positive and robust. So can you share some more colors on weaker spots in Europe? I know you won't be talking about specific countries here, but sort of what are the areas where you think EVO can improve the performance in coming quarters?
+
+And then when can we expect to see Europe returning to positive growth? I mean, when can we expect this ringfencing to be lapped up and then behind us?
+
+Martin Carlesund
+
+This -- the proactive measure that we are taking now is to see that we are creating a really good fundamental and a little bit ahead of that. And I've been meeting all the regulators all over the last period, and we're working with them. We don't comment on specific countries, just as you know, and as you stated. But I gave you an idea that where the channelization, of course, was low, the impact of ringfencing is high. And where the channelization is high, the impact is low.
+
+So essentially, the countries that have very stringent regulation and where they lost a lot of players to unlicensed operators, there we have a larger impact. So that gives you a little bit of the flavor.
+
+Then as you understand, we have taken measures and then, of course, in U.K. a little bit earlier, but for the rest in the beginning of February. So coming out into Q2, we have this now the new fundament, the new level. And from that, of course, we expect to be able to have a good development.
+
+Pravin Gondhale
+
+That's helpful. And then quickly on the current trading. Can you please share some color on Q2 trading so far? And then how should we be thinking about the top line growth trajectory for the remainder of the year?
+
+Martin Carlesund
+
+I'm sorry, but we do not guide on quarters. I stated that I expect the second half to be a little bit stronger as a result of the full effect of the ringfencing in Q2, and that's what we state when it comes to a little bit flavor to guiding.
+
+Operator
+
+[Operator Instructions]
+
+Martin Arnell
+
+Guys, this is Martin Arnell with DNB in Stockholm. Can you hear me?
+
+Martin Carlesund
+
+I can hear you very well. Thank you.
+
+Martin Arnell
+
+So I want to ask you on the U.K. Gaming Commission review. When do you expect more clarity on that and are you in constant dialogue with them? And do you know anything about the outcome? Have you taken all the necessary actions or is there more to be done?
+
+Martin Carlesund
+
+We have taken all actions that we are -- that they asked us for. We have provided all the information. It's a process, of course, driven like any regulatory process by their agenda and their time line. We have a good cooperation and talks a lot to them, and I expect that we're moving forward. Exactly when is closing, I can't state that because it's not simply up to me.
+
+Martin Arnell
+
+Do you know anything on the outcome so far?
+
+Martin Carlesund
+
+No, I do not. I don't want to speculate on....
+
+Martin Arnell
+
+And then on -- yes. Okay. And can you just help us understand that a bit more on the ringfencing. I mean, how temporary of an effect is it? Because a regulated operator that offers your games should just be a click away, right, if the players out for your games.
+
+So why is this negative effect at all in a medium-term perspective?
+
+Martin Carlesund
+
+That's a very good question. And let me elaborate slightly on that, not to be too lengthy, but we are a supplier, technical supplier game. So we are not really affecting the channelization in the country. The channelization in the country is dependent on the parameters that the regulators set up. So if you put a high tax, 35%, 38% tax or if you put limitations to what the players can do or deposit rules or other things that actually is an obstruction for the player and against the players will, then the channelization will go down, equal to an annual regulation of whatever that might be.
+
+So if you push the market too hard, the market will find its way to its products in another way. So the regulators, when they push it, like they have done and the channelization goes down, it's because players are not comfortable playing on the regulated sites. Then the regulators, in some cases, now move to a repressive measurement. So they want to restrict it even further. They want to invest money in the customs in the parts supporting.
+
+And that's where we are now. So the players, they need to want to play on the regulated side. We can't do much about that. So that's why, even though it's a click away that it's a bit slow to get back to the license site.
+
+Martin Arnell
+
+Okay. Thanks for clarifying that. And in your actions from February, how much is this a proactive action from yourself or how much is it that other regulators have picked up the situation in the U.K. and actually asking you for changes?
+
+Martin Carlesund
+
+I personally met almost all major regulators in Europe during this period. And it's close to 100% proactive measure. So it's -- that's what it is. We want to see that we are not -- that we stand firm and avoid similar situations. And don't forget that we've been regulated for soon 20 years.
+
+And we have been acting in the same way and been lenient and following through. But the regulators now are moving a little bit. And now we're trying to be a little bit ahead of that. So it's a proactive measure.
+
+Martin Arnell
+
+Perfect. My final question. You repeated the EBITDA guidance and how do you reason behind that? Because, I mean, wouldn't it have been more prudent to take a little bit more cautious approach given that you're in the early phase of the changes in Europe?
+
+Martin Carlesund
+
+The -- when you make a guidance, you need to make it the best estimate you have for what the year will give or what the EBITDA margin would give. And you need to have a good reason for if you're going to lower it or increase it. Right now, this is the best way that we see it. This is our guidance. We think that we will reach between 66%, 68%, 2025.
+
+So we can -- we shouldn't change it.
+
+Operator
+
+[Operator Instructions]
+
+Monique Pollard
+
+Good morning, everybody. It's Monique here from Citi. I had 3 questions, if I can. The first one Martin, just coming back to this idea of the geo-blocking that you've been doing in Europe. I'm trying to understand how much of the impact is straight blocking of unregulated operators in the region.
+
+And whether there's a subsequent impact, which is on those unregulated sites, for instance, maybe your games were being paid at faster spin speeds with no deposit limits. And that has all been removed because now you are just on regulated sites and therefore, the games are being played in line with the regulation. In the regulated markets you're in, where you are offering the game to unregulated players, will the games -- do they still have the sort of parameters of regulatory backdrop attached to them or not? That's the first question.
+
+The second question is just on the RNG momentum. That slowed materially to 3% this quarter versus 7% last quarter. I just wanted to understand what you think you can be doing to get that portfolio performing better. Is it a matter of releasing more games? Is it -- I don't know, or is it something else that you feel you've got a handle on now?
+
+And then the final question is just a clarification. I'm just trying to make sure there's no material changes, for instance, in commission rates in any part of your business in this quarter. All the slowdown that we're seeing is to do with either the one-offs, the cyber attacks, the geo-blocking or it's to do with a slowdown in player volumes. There's no change in commission rates?
+
+Martin Carlesund
+
+Yes. First question is an intelligent question. I understand what you're asking. The -- I wouldn't say that it's because of that the games are slower and that they don't want to play. So the players when they are ringfenced, they don't return because of the -- they don't return if they can continue to play on other providers outside the license.
+
+So there is a bit of stiffness. I wouldn't assume it has to do with the way that the games are played inside the regulated markets. That's the answer to the first question. That's not material, as I see it.
+
+When it comes to the RNG development, I would say that, that is also as much affected by the ringfencing. We don't quantify exactly where the growth is coming from, but it's also affected by that. So that is part of the softness. Quarter-on-quarter, Q4 is also seasonality strong and Q1 is not so much. So that's also part of the fact.
+
+And the third effect on the RNG is that we are still working our way to get to a good level in North America. I think that the underlying part of RNG is actually stronger in Q1 than it was in Q4 and in Q3. But the growth comes out at 3.1%. So that's what it is. Pricing, no.
+
+I don't see any structural changes in the pricing or the player mix or in other, there is no such fundamental.
+
+Monique Pollard
+
+And just sorry, coming back to the third question. So as it was before, pre the geo-blocking, where you were offering your games on an unregulated site, they didn't have the regulatory changes attached to them. So you could play at whatever spin feed, et cetera, but you're just saying that doesn't have a big impact.
+
+Martin Carlesund
+
+I don't -- I say that an overregulated market or a too stringent market will get low channelization. But I don't see that, that is a light switch happening that shows in Q1 that, that is the effect that the players are playing, but they're playing on lower speed rather. That's not it. So in terms of ringfencing, we are strict there. That means that now anyone playing on our products have to have a license where such license exists.
+
+Operator
+
+[Operator Instructions]
+
+Virendra Chauhan
+
+This is Virendra here from AlphaValue...
+
+Martin Carlesund
+
+Sorry, I couldn't hear you.
+
+Virendra Chauhan
+
+Can you hear me now?
+
+Martin Carlesund
+
+Yes.
+
+Virendra Chauhan
+
+Okay. Virendra from AlphaValue. And I have 3 questions. So the first is particularly regarding Asia. So how far along are you with respect to the actions you wanted to take in Asia to fix these cyber fraud issues that you've been having for the past couple of quarters?
+
+And any success so far you are noticing as a result of these actions that you would have taken probably a couple of quarters ago?
+
+Martin Carlesund
+
+We're having good traction in -- with the actions that we are taking. The actions are still leveling out. So we are, as I stated, removing the number of customers and some -- and the number of traffic. And at the same time, of course, we're growing and that equals out. I don't have any exact time line to relate that to.
+
+We are on track with what we are doing, and we hope to see, of course, as we move forward traction revenue-wise as well.
+
+Virendra Chauhan
+
+Okay. Perfect. Second one was, do you expect any more of these proactive actions that you've been taking in other markets in Europe and at least is that on the horizon? Or do you see it at the moment?
+
+Martin Carlesund
+
+No, I don't expect that, but we are now following the regulation and the regulation is moving in Europe. And now we come to this baseline. And of course, we need to be lenient and follow through also in the future. But right now, I don't expect any other actions.
+
+Virendra Chauhan
+
+Okay. And just one on your comments regarding the business growth. You said that there was a lot more growth in live casino side was driven by more commissions per customer rather than new customers. So does that, in any way, imply that your win margins have gone up? Or are you just seeing more business with the existing customers?
+
+Martin Carlesund
+
+I'm not 100% sure I understood what you meant. But essentially, we are working with the majority of the market already since a number of years. So the growth will come from that the large customers gets larger rather than from small new customers are added.
+
+Virendra Chauhan
+
+Yes. My question was, is that win margins going up? Or is that just more business with the existing customers?
+
+Martin Carlesund
+
+I think that we have been in that situation over time. I don't think that, that is the driving point of the margin in itself. There are a lot of other aspects that drive the margin, such as the resource mix or other things, more than exactly which customer that have what GGR.
+
+Virendra Chauhan
+
+And just one last one, sorry for one too many. The question is regarding your EBITDA margin guidance. What would take you to the higher end versus the lower end in your assumptions or expectations that you kind of modeled?
+
+Martin Carlesund
+
+If we get good traction and do what we think that we can do, of course, we will reach the higher end. A little bit more closer probably on the lower end.
+
+Operator
+
+[Operator Instructions]
+
+Ed Young
+
+Hello, it's Ed Young from Morgan Stanley. Can you hear me?
+
+Martin Carlesund
+
+Yes.
+
+Ed Young
+
+I've got three questions, please. The first is on ringfencing. You've talked about in detail this morning about the ringfencing and the time line. But you've also talked about this being regulated markets in Europe. Could you just clarify for us if there are any regulated markets in Europe you've not chosen to ringfence?
+
+And then more broadly, why wouldn't this be applied to all regulated markets, including outside of Europe? So I just want to understand the framework you've used for the decisions you've made around the ringfencing.
+
+The second is FX, you've helpfully given a sort of ex FX number in the statement. I just wondered if you could help us -- is that just on the basis of the translation of where you've earned commission revenue in dollars or whatever it might be? Or is this also applying a player purchasing power effect, which you've sometimes referred to in the past? So if you could perhaps just clarify on that? And any thoughts on purchasing power?
+
+And then the third, Joakim, obviously newly in the role. I just wondered if you could talk through whether there's anything you think needs to be done differently from how it's been done in the past from your seat as CFO in your role? And if you could expand a little bit on what you think you bring as a new face to the Evolution management team?
+
+Martin Carlesund
+
+Yes. Okay. We work with the ones where there is a local license and then we apply ringfencing where those ones exist. So that's the remit. And we have implemented it in practically all where that exists. So that's where we are.
+
+When it comes to the second question, what was that, purchasing power and FX. The FX effect that we are, -- that's the bookkeeping currency effect. The purchasing power, we have not -- we don't quantify that in any way. But of course, the purchasing power effects, and it will always be there. We haven't quantified that in any way.
+
+So that's the bookkeeping part of it that you see.
+
+And the last one was to you, Joakim, regarding his entry of a new role. Welcome, Joakim.
+
+Joakim Andersson
+
+Thank you very much. Thank you for the question. I mean, I've been on board for a couple of months, so I'm still new here. I'm learning. I'm -- I get a lot of impressions, a lot of information to digest.
+
+Yes, I mean to try to still say something about my first impressions, I think it's a fantastic company. I'm super eager to learn more, done great in the past, and we have a lot of interesting things on the table. The team is good, quite impressed with background. We have solid processes. It's a high quality of the outputs. So I have a great boss. So yes, that's probably the first impression.
+
+What can I bring? I mean, this is not a revolution in Evolution, but evolution, I think. Jacob, who was my predecessor, a great guy and knew a lot. So I'm trying to fill his shoes to start with. Obviously, I have a slightly different background.
+
+I have a quite long experience from public companies as a third person, I'm structured and process-oriented. I mean, I think we can improve everything a little bit. So I'm working my way into it, trying to change some things, trying to improve a little bit every day. But nothing revolutionizing, for me.
+
+Ed Young
+
+I wonder if I could follow up on the first question. You said practically, so maybe there are 1 or 2 you haven't. So could I ask again what's the framework you've decided whether to do it or not? And can I repeat the global question, you talked about Europe but why wouldn't the approach be applied globally?
+
+Martin Carlesund
+
+I won't go into detail country by country on what actions we take. But in general, whether it's a local license, we have ringfenced in Europe. All worlds are different. If you look at, for example, United States, we are not obliged to ringfence at all because that's the operators' obligation. We help the operators, but that's falls on none.
+
+So the regulators have a little bit different approach in different jurisdictions. Right now, the European community is moving a little bit towards the B2B to B -- ringfencing or even being the customs of the borders, and we are trying to be a little bit proactive there following suit. So that's the situation in Europe. And it's different from other jurisdictions. All jurisdictions are different, of course.
+
+Operator
+
+No more questions at this time. So I hand the conference back to the speakers for any closing comments.
+
+Martin Carlesund
+
+Thank you very much for listening. Pleasure to talk to you, answer your questions. Look forward to the next quarter. And some of you, I will meet soon. So have a nice day.
+
+Joakim Andersson
+
+Thank you.

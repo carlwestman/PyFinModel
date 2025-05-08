@@ -6,6 +6,7 @@ from typing import List, Optional
 from ..core.company import Company
 from ..core.financial_item import FinancialItem
 from ..kpi.kpi_manager import KPIManager  # Updated import
+from scipy.stats import linregress
 
 class ChartGenerator:
     def __init__(self, company: Company):
@@ -249,6 +250,81 @@ class ChartGenerator:
                 
         plt.close()
 
+    def plot_scatter_with_regression(
+        self,
+        x_item_name: str,
+        y_item_name: str,
+        save_path: Optional[str] = None,
+    ) -> None:
+        """
+        Create a scatterplot of two financial items with a least squares linear regression line.
+
+        Args:
+            x_item_name (str): The name of the FinancialItem to use for the x-axis.
+            y_item_name (str): The name of the FinancialItem to use for the y-axis.
+            save_path (Optional[str]): Path to save the chart. If None, the chart is displayed.
+
+        Raises:
+            ValueError: If one or both FinancialItems are not found or have no overlapping periods.
+
+        Example:
+            >>> chart_generator.plot_scatter_with_regression("Revenue", "NetProfit")
+        """
+        # Find the financial items
+        x_item = self._find_item(x_item_name)
+        y_item = self._find_item(y_item_name)
+
+        if not x_item or not y_item:
+            raise ValueError(f"One or both items '{x_item_name}' and '{y_item_name}' not found.")
+
+        # Find overlapping periods
+        x_data = {period: value for period, value in x_item.historical.items() if value is not None}
+        y_data = {period: value for period, value in y_item.historical.items() if value is not None}
+        common_periods = sorted(set(x_data.keys()).intersection(y_data.keys()))
+
+        if not common_periods:
+            raise ValueError(f"No overlapping periods found between '{x_item_name}' and '{y_item_name}'.")
+
+        # Extract data for the common periods
+        x_values = np.array([x_data[period] for period in common_periods])
+        y_values = np.array([y_data[period] for period in common_periods])
+
+        # Perform linear regression
+        slope, intercept, r_value, p_value, std_err = linregress(x_values, y_values)
+
+        # Generate regression line
+        regression_line = slope * x_values + intercept
+
+        # Plot scatterplot and regression line
+        plt.figure(figsize=(10, 6))
+        plt.scatter(x_values, y_values, label="Data Points", color="blue", alpha=0.7)
+        plt.plot(x_values, regression_line, label=f"y = {slope:.2f}x + {intercept:.2f}", color="red")
+
+        # Add chart details
+        plt.title(f"Scatterplot of {x_item_name} vs {y_item_name}")
+        plt.xlabel(x_item_name)
+        plt.ylabel(y_item_name)
+        plt.legend()
+        plt.grid(True)
+
+        # Display R-squared value
+        plt.text(
+            0.05, 0.95,
+            f"$R^2$ = {r_value**2:.2f}",
+            transform=plt.gca().transAxes,
+            fontsize=12,
+            verticalalignment="top",
+        )
+
+        # Save or show the chart
+        if save_path:
+            plt.savefig(save_path)
+            print(f"Chart saved to {save_path}")
+        else:
+            plt.show()
+
+        plt.close()
+
     def _find_item(self, item_name: str) -> FinancialItem:
         """
         Locate a FinancialItem in the company's financial statements.
@@ -266,4 +342,6 @@ class ChartGenerator:
             self.company.income_statement.get_item(item_name)
             or self.company.balance_sheet.get_item(item_name)
             or self.company.cash_flow_statement.get_item(item_name)
+            or self.company.kpi_statement.get_item(item_name)
+            or self.company.other_financials_statement.get_item(item_name)
         )

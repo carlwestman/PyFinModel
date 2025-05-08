@@ -2,7 +2,8 @@
 
 import re
 from typing import Optional
-
+from ..core.financial_item_type import FinancialItemType
+from ..core.financial_item import FinancialItem
 
 class KPIManager:
     def __init__(self, company):
@@ -90,12 +91,8 @@ class KPIManager:
 
     def calculate_kpi(self, kpi_name: str) -> dict:
         """
-        Calculate the values of a Key Performance Indicator (KPI) across all periods.
-
-        This method evaluates the formula or function associated with the specified KPI name 
-        for each period, using the historical and forecasted values of the financial 
-        items referenced in the formula. The result is a dictionary mapping each 
-        period to the calculated KPI value.
+        Calculate the values of a Key Performance Indicator (KPI) across all periods
+        and add it as a FinancialItem in the company's KPI statement.
 
         Args:
             kpi_name (str): The name of the KPI to calculate. This must match a KPI 
@@ -113,11 +110,6 @@ class KPIManager:
               it is treated as a constant or assigned a default value of 0.
             - Division by zero is handled gracefully by assigning `None` to the result 
               for that period.
-
-        Example:
-            >>> kpi_manager.add_kpi("NetProfit", "Revenue - Expenses")
-            >>> kpi_manager.calculate_kpi("NetProfit")
-            {'2025': 50000, '2026': 55000, '2027': 60000}
         """
         formula_or_function = self.kpis.get(kpi_name)
         if not formula_or_function:
@@ -127,7 +119,13 @@ class KPIManager:
         if callable(formula_or_function):
             # Gather all periods from all financial items
             periods = set()
-            for statement in [self.company.income_statement, self.company.balance_sheet, self.company.cash_flow_statement]:
+            for statement in [
+                self.company.income_statement,
+                self.company.balance_sheet,
+                self.company.cash_flow_statement,
+                self.company.kpi_statement,
+                self.company.other_financials_statement,
+            ]:
                 for item in statement.items.values():
                     periods.update(item.historical.keys())
                     periods.update(item.forecasted.keys())
@@ -143,6 +141,15 @@ class KPIManager:
                         results[period] = round(result, 3)  # Round to 3 decimal places
                 except Exception as e:
                     results[period] = None  # Handle errors gracefully
+
+            # Add the calculated KPI as a FinancialItem in the KPI statement
+            kpi_item = FinancialItem(
+                name=kpi_name,
+                item_type=FinancialItemType.RATIO,  # Assuming KPIs are ratios
+                historical=results,
+            )
+            self.company.kpi_statement.add_item(kpi_item)
+
             return results
 
         # If the KPI is a formula string, evaluate it as before
@@ -178,6 +185,14 @@ class KPIManager:
                     results[period] = round(result, 3)  # Round to 3 decimal places
             except ZeroDivisionError:
                 results[period] = None  # Handle divide by zero gracefully
+
+        # Add the calculated KPI as a FinancialItem in the KPI statement
+        kpi_item = FinancialItem(
+            name=kpi_name,
+            item_type=FinancialItemType.RATIO,  # Assuming KPIs are ratios
+            historical=results,
+        )
+        self.company.kpi_statement.add_item(kpi_item)
 
         return results
 
